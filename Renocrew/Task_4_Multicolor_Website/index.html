@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Navbar</title>
+    <style>
+        :root {
+            --navbar-bg-gradient: linear-gradient(45deg, #ff6b6b, #6b6bff, #6bffaf, #ffbf6b);
+            --navbar-text-color: #ffffff;
+            --navbar-hover-color: #ffffff;
+            --navbar-hover-gradient: linear-gradient(45deg, #ff5151, #5151ff, #51ff99, #ffb351);
+            --navbar-active-color: #ffffff;
+            --navbar-active-gradient: linear-gradient(45deg, #ff3939, #3939ff, #39ff8c, #ffaa39);
+            --font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            margin: 0;
+            font-family: var(--font-family);
+            background-color: #f0f0f0;
+        }
+
+        /* Navbar styles */
+        nav {
+            background: var(--navbar-bg-gradient);
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: var(--navbar-text-color);
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 8px;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background: var(--navbar-hover-gradient);
+            color: var(--navbar-hover-color);
+        }
+
+        nav a.active {
+            background: var(--navbar-active-gradient);
+            color: var(--navbar-active-color);
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#" class="active">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+    </nav>
+
+</body>
+</html>
