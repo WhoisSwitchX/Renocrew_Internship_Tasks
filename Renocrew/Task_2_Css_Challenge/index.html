@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styled Paragraphs</title>
+    <style>
+
+        #paragraphContainer {
+            border: 1px solid #ccc;
+            padding: 10px;
+            background-color: aqua;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+       
+        #paragraphContainer p:first-child {
+            color: red;
+            background-color: yellow;
+        }
+
+        
+        #paragraphContainer p:not(:first-child) {
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="paragraphContainer">
+        <p><b>The Water Cycle:</b>
+            The water cycle, also known as the hydrological cycle, describes the continuous movement of water on, above, and below the Earth's surface.</p>
+        <p><b>Benefits of Regular Exercise:</b>
+            Engaging in regular physical exercise offers a myriad of benefits for both physical and mental health.</p>
+        <p><b>The Concept of Photosynthesis:</b>
+            Photosynthesis is a fundamental process in plants and certain microorganisms where they convert light energy into chemical energy, specifically in the form of glucose. </p>
+        <p><b>Understanding Blockchain Technology:</b>
+            Blockchain technology is a decentralized and distributed ledger system that underlies cryptocurrencies like Bitcoin. </p>
+        <p><b>The Importance of Biodiversity:</b>
+            Biodiversity, the variety of life on Earth, is crucial for the health and resilience of ecosystems. </p>
+    </div>
+
+</body>
+</html>
